@@ -11,6 +11,7 @@
     <meta name="viewport" content="width=device-width">
     <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
     <link rel="stylesheet" href="lib/pure/pure.css">
+    <link rel="stylesheet" href="styles/skin.css">
 
         <!-- build:css(.tmp) styles/main.css -->
         <link rel="stylesheet" href="styles/main.css">
@@ -27,10 +28,17 @@
     <![endif]-->
 
     <!-- Add your site or application content here -->
-    <section>
-      <header><h1>Cards</h1></header>
-      <div class="container" ng-view=""></div>
-      <footer><a href="https://github.com/netxph/cards">https://github.com/netxph/cards</a></footer>
+    <section class="pure-skin-cards">
+        <nav class="pure-menu pure-menu-open pure-menu-horizontal">
+            <a href="#" class="pure-menu-heading">Cards</a>
+            <ul>
+                <li><a href="#">add area</a></li>
+                <li><a href="#">options</a></li>
+                <li><a href="#">about</a></li>
+            </ul>
+        </nav>
+        <section ng-view=""></section>
+        <footer><a href="https://github.com/netxph/cards">https://github.com/netxph/cards</a></footer>
     </section>
 
     <!-- Google Analytics: change UA-XXXXX-X to be your site's ID -->

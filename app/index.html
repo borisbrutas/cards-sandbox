@@ -8,7 +8,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title>Cards [v2]</title>
     <meta name="description" content="">
-    <meta name="viewport" content="width=device-width">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
     <link rel="stylesheet" href="lib/pure/pure.css">
     <link rel="stylesheet" href="styles/skin.css">
@@ -28,13 +28,16 @@
     <![endif]-->
 
     <!-- Add your site or application content here -->
-    <section class="pure-skin-cards">
-        <nav class="pure-menu pure-menu-open pure-menu-horizontal">
+    <section>
+        <nav class="pure-menu pure-menu-open pure-menu-fixed pure-menu-horizontal">
             <a href="#" class="pure-menu-heading">Cards</a>
-            <ul>
-                <li><a href="#">add area</a></li>
-                <li><a href="#">options</a></li>
-                <li><a href="#">about</a></li>
+            <form class="pure-form pure-menu-right">
+                <input type="text" placeholder="Search">
+                <button class="pure-button pure-button-primary">Go</button>
+            </form>
+            <ul class="pure-menu-right">
+                <li><a href="#">Add area</a></li>
+                <li><a href="#">Options</a></li>
             </ul>
         </nav>
         <section ng-view=""></section>

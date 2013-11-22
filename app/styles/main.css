@@ -1,5 +1,3 @@
-@import url(http://fonts.googleapis.com/css?family=Lily+Script+One);
-
 * {
     -webkit-box-sizing: border-box;
     -moz-box-sizing: border-box;
@@ -17,6 +15,10 @@ body {
 
 .pure-menu {
     padding: 0.5em;
+}
+
+.pure-menu > form {
+    padding-left: 0.5em;
 }
 
 .pure-menu-right {
